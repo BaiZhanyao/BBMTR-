@@ -1,0 +1,106 @@
+﻿<local:MyCard Title="BBMTR Server Project" Margin="0,0,0,15" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,4"
+                   Text="Version：2.2" />
+        <TextBlock Margin="0,0,0,4"
+                   Text="请不要做出破坏服务器行为" />
+        <TextBlock Margin="0,0,0,4"
+                   Text="如果你的启动器不是v2.2那么你需要更新客户端" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="快速启动在这里哦" />
+        <local:MyButton Margin="0,8,0,0" Width="250" Height="35" ColorType="Highlight" 
+                 Text="主线路" EventType="启动游戏" 
+EventData="BBMTR|8.139.5.49" />
+	<local:MyButton Margin="0,8,0,0" Width="250" Height="35" 
+ColorType="Highlight" 
+                 Text="建设服" EventType="启动游戏" 
+EventData="BBMTR|84366h90u2.goho.co:14965" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="MOD与资源包下载" Margin="0,0,0,15" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,4"
+                   Text="你如果用的是精简版客户端，必须下载MOD和资源包才能正常游玩服务器" />
+	<TextBlock Margin="0,0,0,4"
+                   Text="下载时要在文件名的后面加一个.zip" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="MOD下载后要解压在\.minecraft\versions\BBMTR\mods文件夹里。" />
+	<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="资源包下载后要解压在\.minecraft\versions\BBMTR\resourcepacks文件夹里。" />
+	<local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+ColorType="Highlight"
+        Text="下载MOD" EventType="下载文件" EventData="https://vip.123pan.cn/1815965863/BBMTR/%E5%AE%A2%E6%88%B7%E7%AB%AFMOD.zip" />
+	<local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+ColorType="Highlight"
+        Text="下载资源包" EventType="下载文件" EventData="https://vip.123pan.cn/1815965863/BBMTR/%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%B5%84%E6%BA%90%E5%8C%85.zip" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="历史更新" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+	<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="2.2更新了精简版客户端" />
+	<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="2.1更新了建设服" />       
+	<local:MyHint Margin="0,8,0,2"
+                   Text="2.0解决了内存泄漏" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="Dev1.5由1.19.4降级1.18.2" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+              <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="BBMTR开发者平台" EventType="打开网页" EventData="https://bbgzs.mysxl.cn"/>
+                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="获取最新客户端" EventType="打开网页" EventData="http://aiken.tk/download.php"/>
+          </Grid>
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="清理垃圾" EventType="清理垃圾" ToolTip="清理垃圾文件。"/>
+               <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="内存优化" EventType="内存优化" ToolTip="将物理内存占用降低约1/3，不仅限于MC！&#xA;如果使用机械硬盘，这可能会导致一小段时间的严重卡顿。"/>
+          </Grid>
+     </StackPanel>
+</local:MyCard>
+<local:MyCard Margin="0,0,0,12" Title="我也要开服" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.kjaiu.link/assets/images/h-1.svg" Title="Kjaiu" Info="让每个人感受到开服的乐趣" EventType="打开网页" EventData="https://www.qxsh.tk/?go=home" Type="Clickable" />
+     </StackPanel>
+</local:MyCard>
+    <Border Background="#A0FFFFFF" Height="20720" Margin="-25,10,-25,-20500" BorderThickness="0,2,0,0" BorderBrush="#AAAAAAAA">
+      <StackPanel Margin="40,15,0,10">
+        <TextBlock Text="BBMTR Server Project" FontSize="16" Margin="0,5,5,5" />
+        <TextBlock Text="By：Bai Zhanyao" />
+        <TextBlock Text="维护：BBMTR Server Project" />
+        <StackPanel Orientation="Horizontal" Margin="0,2,0,0">          
+        <TextBlock Text="官方网站: " />          
+        <local:MyTextButton Margin="2" Text="https://bbgzs.mysxl.cn/" EventType="打开网页" EventData="https://bbgzs.mysxl.cn/" ToolTip="点击打开BBMTR主页官网" />
+        </StackPanel>        
+        <StackPanel Orientation="Horizontal" Margin="0,2,0,0">          
+        <TextBlock Text="抖音: " />          
+        <local:MyTextButton Margin="2" Text="baizhanyao69" EventType="打开网页" EventData="https://www.douyin.com/user/MS4wLjABAAAAK22lccubER7JvBZm3kTX54OgNgeyeKlrnNreuC4RxmVsTE8MlARFvHAnj3ZKNLcV" ToolTip="点击打开抖音" />
+        </StackPanel>
+        <Border Height="20500" Background="{DynamicResource ColorBrush7}" Opacity="0.3" Margin="-40,10,0,0">
+          <StackPanel>
+            <Grid Margin="0,7,0,15">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="100">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
+              <TextBlock Text="到  底  啦" HorizontalAlignment="Center" FontSize="14" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" />
+              <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+            </Grid>
+          </StackPanel>
+        </Border>
+      </StackPanel>
+    </Border>
